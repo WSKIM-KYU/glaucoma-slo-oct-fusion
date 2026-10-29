@@ -1,0 +1,126 @@
+{
+  "version": "e04_fairvision_formal_v1",
+  "created_at": "2026-10-27T23:03:52.116622+09:00",
+  "data": "Harvard-FairVision Glaucoma official Test only",
+  "test_cases": 3000,
+  "test_normal": 1534,
+  "test_glaucoma": 1466,
+  "dataset_zip_sha256": "105942a233b216c22f43fb1cc8abc37b42d43134c52103d4b31977b69e786c62",
+  "metadata_sha256": "8626d46d41367d1172db1e568ce3e3582a4547d6dae55c240f6fbb9503fca4dd",
+  "pairs_sha256": "52e215301f01da9d8e0c1d91aa475d7488cc17a43617def49b53528f00e8be0f",
+  "source_sha256": "5add8e1cf1c226d7888a686ec370d090318492868677b9c5f40156043abd8d9f",
+  "checkpoints_sha256": {
+    "octlast_concat_fold1_seed42": "b04c8683883e202850c270c37143313ecaaa8314ecc32cfb1d9871eff5714c59",
+    "octlast_concat_fold1_seed43": "e2bc9ab212c6db61edf7bb044e48ff626d8f41daaeb2e59bebb7f53c61c298f4",
+    "octlast_concat_fold1_seed44": "b125f8aaa4b9268e9a2acdf725fb456b0acd514645db5112ac41146fc891fa12",
+    "octlast_concat_fold2_seed42": "1e2374043e9051d8840b25162264df2ebb9a5ae4b7e994360f48ed43aca717b3",
+    "octlast_concat_fold2_seed43": "2d48d9e426e164bb1458d04a638f05d5d78144b141808b135880e09f8086d179",
+    "octlast_concat_fold2_seed44": "c8953b8d4e549a5e988d7e79f701222bbd3882bc573eac5472dbba388c009de6",
+    "octlast_concat_fold3_seed42": "13e780f7d2e2960964fa5fd220b19719ac65f43e1696dcf766a412054d2180bd",
+    "octlast_concat_fold3_seed43": "2c0ad2fc30fcb260a12d7b9c73f9143156bcfcb437cc59dda7b4bc3cc303d37c",
+    "octlast_concat_fold3_seed44": "ef8d8542030b73b861c891ba8cd9bc4a63d32fea890c8e341f7f8884a6fffc1a",
+    "octlast_concat_fold4_seed42": "efbd1097844f1d4cd8df3bea555870b85c0affe4c75db3916ec46b404ccfb4ab",
+    "octlast_concat_fold4_seed43": "cebe2768ac31c12a2007eeb1972305e602deaeffd9e38939a2f592a2cc74250f",
+    "octlast_concat_fold4_seed44": "c1834dd7777843c50ecb7ecc97974f522d4e6f2a9bed04e13248d9980c51b2f1",
+    "octlast_concat_fold5_seed42": "112779f15ce8e5bf96aabc9c06e4e5857774aa4abaa55e87c63e0d841fd265ef",
+    "octlast_concat_fold5_seed43": "8423c64be5c2a1f6978aa7d7c9cebc90a597e3866539e1599bc8060c847b3702",
+    "octlast_concat_fold5_seed44": "36f877633ef3031475da3982676a4c82d5473028057129257c0a9a6c9c737c18",
+    "octlast_cross_fold1_seed42": "8e9afb35b9ec0d653ddcc91df0ba19cdb3acf4dd62e1a098b856602c294ae1c0",
+    "octlast_cross_fold1_seed43": "907a485fa04d460fb6f15c5d93b60e01c0da2bc989411f4b634a979fc76412fe",
+    "octlast_cross_fold1_seed44": "9eb1097fed4a6240f0eb4c2b5f13df524f065eedb1908a8d0b6148fca6c462b2",
+    "octlast_cross_fold2_seed42": "f5309fe1af1bf6ec43489ee43d1a652d5ebd3ea015f6088e84e7b004549e09ab",
+    "octlast_cross_fold2_seed43": "6156342d60996bda336ded416f7901fa22e04cbbdb534242906d71635362ec0e",
+    "octlast_cross_fold2_seed44": "31f73c050367d4e1a77071e81ca88b500082c0dd39c37fc597ed22c286e80391",
+    "octlast_cross_fold3_seed42": "7dbaa64ba702652b893bd091c57ed3272aba057485766db3f25135537669724c",
+    "octlast_cross_fold3_seed43": "82139b51a307d116e62ace2d858193975dc944e4acc56065145e57e2947eea1f",
+    "octlast_cross_fold3_seed44": "9d46623808a303e1321f12c76dfd04514c907dbc0a6c2dc5ca984cf2e0037034",
+    "octlast_cross_fold4_seed42": "4ff7906b39e0f9935ca9f66fcfb927f95f17cb8fc946edb012f3324e22d5b4e0",
+    "octlast_cross_fold4_seed43": "0eb396fe4b1d17d706b639d4c01949bfb4719fdd955596abf4ee15bb86c00b9e",
+    "octlast_cross_fold4_seed44": "8a3674c3907a3082f7871d35955d288af5c35a2ba7f48d93cdd9796b5b1ec183",
+    "octlast_cross_fold5_seed42": "b4d24bed300110b94c6174282e38dedf3eeb9577581fa1a945aa9eeb31a878f1",
+    "octlast_cross_fold5_seed43": "0e5a794b15b05813abbc03acdc38761da7f6ae7a9b15e13f0adf0aadaac3112f",
+    "octlast_cross_fold5_seed44": "b2ec17bc5a718a5c9756f97b5a6056837538553c023ce6bbce3c2fd1b982d478",
+    "oct_attn_frozen_fold1_seed42": "cf1ae24fa7a1c61012ca9ee597f228fc3b7347bcce37720fa28b069fb372d72e",
+    "oct_attn_frozen_fold1_seed43": "a8b5f8930999df302f537164382afe0427029a6ddd5ec857c9abc58075d17870",
+    "oct_attn_frozen_fold1_seed44": "7a4331c894110f8cbf79eebd07504cbbca402c102f63825a63238a01d7f84bb2",
+    "oct_attn_frozen_fold2_seed42": "28a8a8e2922d86413df3d0878714537e667408e21eb8e6beab97e240af7458b3",
+    "oct_attn_frozen_fold2_seed43": "d98bb0cac50939811bb92f94950adc23b2bf881cef2068bcd2b83fe572d6666d",
+    "oct_attn_frozen_fold2_seed44": "713ff1c66bbb6dd69c23b673252a3f5eb11b9a020efdb009308bba56768122c3",
+    "oct_attn_frozen_fold3_seed42": "faf55e967eb81d96e9ec1dacc000e98c97398a852fabedef95f0ab18d44cf191",
+    "oct_attn_frozen_fold3_seed43": "eb3903ebdc9c44627ff1882a3be77105d0eeb28a552887837b2d260ebd0e0b16",
+    "oct_attn_frozen_fold3_seed44": "549313724025fa596a19b7bacdc5c9ae0ec1438d6df8e56f70dbbe36063a6a0e",
+    "oct_attn_frozen_fold4_seed42": "85ff493aa3bec37b598e3d4c6d252c905dc0dc15c31e4638b4a6941db3c9dedb",
+    "oct_attn_frozen_fold4_seed43": "a294a6b4263b58f4d120866fff772bc126948b4ad97d52f868b94fa6da6be0a7",
+    "oct_attn_frozen_fold4_seed44": "a489f935d9df6dafa93448dede4614401ceb716df50dccd24d82815060d7668e",
+    "oct_attn_frozen_fold5_seed42": "5395dacb39fea50332f17c6c75dfd793ed9f268b62cf0d23b843054a9232e440",
+    "oct_attn_frozen_fold5_seed43": "5c8d69455879b57d67305498555e9c5aa700ce9a85a7983b457b3b280aee5f3b",
+    "oct_attn_frozen_fold5_seed44": "381794c5d78b01447dfc8505afb14cc39632c262b15d4321ddeb13ebca045377"
+  },
+  "positions": [
+    0,
+    28,
+    57,
+    85,
+    114,
+    142,
+    171,
+    199
+  ],
+  "oct_axis": 0,
+  "axis_rationale": "first dimension is B-scan count: 200 glaucoma, 128 AMD/DR in official data card; anatomical orientation not fully verified",
+  "slo": "NPZ slo_fundus 200x200 grayscale converted to 3-channel RGB",
+  "oct": "NPZ oct_bscans 200x200x200, axis0, no flip/rotate; 8 uniformly selected",
+  "resize": "PIL bilinear 224x224, no crop, no contrast change",
+  "normalization": {
+    "mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "std": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ]
+  },
+  "models": [
+    "octlast_concat",
+    "octlast_cross",
+    "oct_attn_frozen"
+  ],
+  "ensemble": "arithmetic mean of 15 per-model 3-class softmax vectors",
+  "binary_score": "p1+p2 = 1-p0",
+  "main_metric": "binary AUROC, C4 vs C1",
+  "supporting_metrics": [
+    "AUPRC",
+    "sensitivity@0.5",
+    "specificity@0.5",
+    "balanced_accuracy@0.5",
+    "Brier"
+  ],
+  "exploratory_subgroups": [
+    "race",
+    "gender",
+    "age (<60 vs >=60)"
+  ],
+  "inference_no_training": true,
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261027,
+    "unit": "FairVision case",
+    "scheme": "stratified paired by label"
+  },
+  "versions": {
+    "python": "3.11.17",
+    "torch": "2.14.1+cu126",
+    "torchvision": "0.29.1+cu126",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0"
+  },
+  "warnings": [
+    "SLO vs color fundus domain shift",
+    "OCT geometry not confirmed anatomical equivalence",
+    "GAMMA case IDs not proven unique patients",
+    "OCT-only baseline uses frozen, unlike OCT fine-tuned C1/C4"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "training_cases": 6000,
+  "validation_cases": 1000,
+  "test_cases_excluded": 3000,
+  "training_labels": {
+    "0": 3089,
+    "1": 2911
+  },
+  "validation_labels": {
+    "0": 511,
+    "1": 489
+  },
+  "test_used_for_training": false,
+  "test_used_for_model_selection": false
+}

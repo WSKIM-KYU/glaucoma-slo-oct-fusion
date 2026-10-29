@@ -1,0 +1,16 @@
+{
+  "dataset": "Harvard-FairVision Glaucoma, dataset.zip",
+  "oct_shape": [
+    200,
+    200,
+    200
+  ],
+  "bscan_index_axis": 0,
+  "depth_axis": 1,
+  "fast_lateral_axis": 2,
+  "bscan_slice": "vol[i, :, :] -> rows=depth(axis1), cols=lateral(axis2)",
+  "evidence": "layer bands along axis1 in axis0/axis2 slices (band 29.1/19.7); axis1 slices en-face (1.8/3.1); slow-axis discontinuity axis0 0.601 > axis2 0.543; 6 training cases",
+  "rejected_rule": "projection-SLO correlation (field of view mismatch, unstable 0.00-0.55)",
+  "e04_axis0_consistent": true,
+  "npz_has_rnfl_map": false
+}

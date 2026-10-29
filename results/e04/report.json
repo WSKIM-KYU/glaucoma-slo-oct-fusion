@@ -1,0 +1,86 @@
+{
+  "protocol_sha256": "75cee4b39a38aa47b4e0e88ab58b795b24337361a683128327d741228ad2b928",
+  "predictions_sha256": "4ea740c6823de98d2a4135836f60e6341d5855182bd745acc8955142de1af623",
+  "description": "zero-shot 3-class GAMMA to binary FairVision, no external training",
+  "results": [
+    {
+      "model": "octlast_concat",
+      "n": 3000,
+      "auc": 0.6530768697161742,
+      "auprc": 0.6471295054637362,
+      "brier": 0.3932551679028145,
+      "sensitivity_0p5": 0.002728512960436562,
+      "specificity_0p5": 1.0,
+      "balanced_accuracy_0p5": 0.5013642564802183,
+      "tn": 1534,
+      "fp": 0,
+      "fn": 1462,
+      "tp": 4,
+      "auc_ci_low": 0.6333060452392429,
+      "auc_ci_high": 0.6725666275650958,
+      "auprc_ci_low": 0.6263581379772694,
+      "auprc_ci_high": 0.6687991508375771
+    },
+    {
+      "model": "octlast_cross",
+      "n": 3000,
+      "auc": 0.6347430057398378,
+      "auprc": 0.6387807614128576,
+      "brier": 0.3614937704995506,
+      "sensitivity_0p5": 0.006139154160982265,
+      "specificity_0p5": 1.0,
+      "balanced_accuracy_0p5": 0.5030695770804912,
+      "tn": 1534,
+      "fp": 0,
+      "fn": 1457,
+      "tp": 9,
+      "auc_ci_low": 0.6146673135175228,
+      "auc_ci_high": 0.6544865495338938,
+      "auprc_ci_low": 0.6176931882827245,
+      "auprc_ci_high": 0.6601011108364309
+    },
+    {
+      "model": "oct_attn_frozen",
+      "n": 3000,
+      "auc": 0.644767489430125,
+      "auprc": 0.6312714551618394,
+      "brier": 0.33464858739117254,
+      "sensitivity_0p5": 0.023874488403819918,
+      "specificity_0p5": 0.9934810951760105,
+      "balanced_accuracy_0p5": 0.5086777917899152,
+      "tn": 1524,
+      "fp": 10,
+      "fn": 1431,
+      "tp": 35,
+      "auc_ci_low": 0.6253504189263461,
+      "auc_ci_high": 0.6650083998712227,
+      "auprc_ci_low": 0.6106070952583049,
+      "auprc_ci_high": 0.6538147963480346
+    }
+  ],
+  "contrasts": [
+    {
+      "comparison": "octlast_cross_minus_octlast_concat",
+      "delta_auc": -0.018333863976336406,
+      "ci_low": -0.02581013845335645,
+      "ci_high": -0.01094458975366904
+    },
+    {
+      "comparison": "octlast_concat_minus_oct_attn_frozen",
+      "delta_auc": 0.008309380286049217,
+      "ci_low": -0.006102968903134109,
+      "ci_high": 0.02312266880228245
+    },
+    {
+      "comparison": "octlast_cross_minus_oct_attn_frozen",
+      "delta_auc": -0.01002448369028719,
+      "ci_low": -0.025944540839649168,
+      "ci_high": 0.005719216183959392
+    }
+  ],
+  "limits": [
+    "case IDs are not externally verified as unique person identities",
+    "labels and acquisition modalities differ across cohorts",
+    "OCT-only uses frozen compared with fine-tuned C1/C4"
+  ]
+}

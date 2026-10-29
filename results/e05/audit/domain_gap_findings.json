@@ -1,0 +1,18 @@
+{
+  "recorded": "2026-10-29",
+  "conclusion": "No preprocessing bug. E04 degradation attributed to domain differences between GAMMA and FairVision.",
+  "preprocessing_identical": "E03 training transform = Resize(224,224) + ToTensor + ImageNet Normalize, no CenterCrop; E04 pipeline identical (input statistics matched exactly)",
+  "bscan_positions": "GAMMA [0,36,73,109,146,182,219,255] of 256, uniform; E04 uniform 8 of 200: same relative positions",
+  "batchnorm": "Encoder BatchNorm running statistics fixed at ImageNet values during E03; test-time BN re-estimation not evaluated",
+  "differences": {
+    "fundus_branch_input": "GAMMA color fundus (per-channel SD after normalization R 1.25, G 0.68, B 0.28) vs FairVision grayscale SLO (about 0.46 in all channels)",
+    "oct_geometry": "GAMMA B-scan 512 x 992 (width x depth) -> 224 scales width 0.44 and depth 0.23; FairVision 200 x 200 -> 1.12 in both",
+    "oct_intensity": "normalized mean about -0.74 (GAMMA) vs -1.37 (FairVision); SD 0.30 vs 0.39",
+    "oct_region": "GAMMA macula-centered per dataset documentation; FairVision not stated, inferred optic nerve head-centered"
+  },
+  "sources": [
+    "results/e05/logs/step2a_gamma_cd.log",
+    "results/e05/audit/oct_axis_decision.json"
+  ],
+  "decision": "skip BN re-estimation; proceed to in-domain E05 experiments"
+}

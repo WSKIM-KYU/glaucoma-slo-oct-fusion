@@ -1,0 +1,341 @@
+{
+  "note": "descriptive post-hoc analysis; locked calibration and thresholds; no model or threshold changes",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261030
+  },
+  "min_group": {
+    "n": 30,
+    "per_class": 10
+  },
+  "summary": {
+    "race": {
+      "oct": {
+        "worst_group_auroc": 0.81054848457101,
+        "max_auroc_gap": 0.11451841997849943,
+        "es_auc": 0.7840416323871358,
+        "dpd_0p5": 0.23444042854105623,
+        "deodds_0p5": 0.25351722865445825,
+        "deodds_thr85": 0.2828082476128973,
+        "groups": [
+          "white",
+          "black",
+          "asian"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.8139593443823826,
+        "max_auroc_gap": 0.07606231994793478,
+        "es_auc": 0.8057081607856935,
+        "dpd_0p5": 0.2042317967110675,
+        "deodds_0p5": 0.20365330504174545,
+        "deodds_thr85": 0.23432815166751236,
+        "groups": [
+          "white",
+          "black",
+          "asian"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.8300750846992033,
+        "max_auroc_gap": 0.07447442466743359,
+        "es_auc": 0.8143125670385436,
+        "dpd_0p5": 0.1806786774017619,
+        "deodds_0p5": 0.20028599105124775,
+        "deodds_thr85": 0.24996540430831682,
+        "groups": [
+          "white",
+          "black",
+          "asian"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8208497390348869,
+        "max_auroc_gap": 0.1051092261747475,
+        "es_auc": 0.7962194197982494,
+        "dpd_0p5": 0.21784786607629802,
+        "deodds_0p5": 0.23847963466949584,
+        "deodds_thr85": 0.2725217952857604,
+        "groups": [
+          "white",
+          "black",
+          "asian"
+        ]
+      }
+    },
+    "gender": {
+      "oct": {
+        "worst_group_auroc": 0.8579885687814649,
+        "max_auroc_gap": 0.038633963045377695,
+        "es_auc": 0.8429893770489978,
+        "dpd_0p5": 0.029578676774938473,
+        "deodds_0p5": 0.05559059120301957,
+        "deodds_thr85": 0.04995434907427454,
+        "groups": [
+          "female",
+          "male"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.855645100857682,
+        "max_auroc_gap": 0.03425890283168331,
+        "es_auc": 0.8422154905085515,
+        "dpd_0p5": 0.02181774611681153,
+        "deodds_0p5": 0.039608604379485116,
+        "deodds_thr85": 0.05071454294723715,
+        "groups": [
+          "female",
+          "male"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.8595308976708381,
+        "max_auroc_gap": 0.03744600738868942,
+        "es_auc": 0.8447977657214584,
+        "dpd_0p5": 0.037731738666318126,
+        "deodds_0p5": 0.0577630105138317,
+        "deodds_thr85": 0.061170357959733135,
+        "groups": [
+          "female",
+          "male"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8649576608920165,
+        "max_auroc_gap": 0.036346966591326746,
+        "es_auc": 0.8505716342731022,
+        "dpd_0p5": 0.03095113609132305,
+        "deodds_0p5": 0.05553223331858703,
+        "deodds_thr85": 0.06017262638717635,
+        "groups": [
+          "female",
+          "male"
+        ]
+      }
+    },
+    "ethnicity": {
+      "oct": {
+        "worst_group_auroc": 0.803921568627451,
+        "max_auroc_gap": 0.07424215126341704,
+        "es_auc": 0.8150465855950736,
+        "dpd_0p5": 0.0270631495221082,
+        "deodds_0p5": 0.15666516332710523,
+        "deodds_thr85": 0.1316410025127247,
+        "groups": [
+          "non-hispanic",
+          "hispanic"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.8470588235294118,
+        "max_auroc_gap": 0.02482918863586514,
+        "es_auc": 0.8499649295905489,
+        "dpd_0p5": 0.016142702533543662,
+        "deodds_0p5": 0.08748147670897499,
+        "deodds_thr85": 0.0820565685200696,
+        "groups": [
+          "non-hispanic",
+          "hispanic"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.8199643493761142,
+        "max_auroc_gap": 0.05872744369757288,
+        "es_auc": 0.827816520971347,
+        "dpd_0p5": 0.019806756985826235,
+        "deodds_0p5": 0.09715868822885121,
+        "deodds_thr85": 0.12692481154564783,
+        "groups": [
+          "non-hispanic",
+          "hispanic"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8121212121212121,
+        "max_auroc_gap": 0.0717540612940546,
+        "es_auc": 0.8224716517362516,
+        "dpd_0p5": 0.031900744546296156,
+        "deodds_0p5": 0.16304361832356162,
+        "deodds_thr85": 0.1354294182075897,
+        "groups": [
+          "non-hispanic",
+          "hispanic"
+        ]
+      }
+    },
+    "language": {
+      "oct": {
+        "worst_group_auroc": 0.7887988209285188,
+        "max_auroc_gap": 0.09046078025412152,
+        "es_auc": 0.7848508158612092,
+        "dpd_0p5": 0.16205987588520615,
+        "deodds_0p5": 0.18719578071816084,
+        "deodds_thr85": 0.206015264692557,
+        "groups": [
+          "english",
+          "other languages",
+          "spanish"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.8123802505526898,
+        "max_auroc_gap": 0.060504033767999066,
+        "es_auc": 0.7958460340457725,
+        "dpd_0p5": 0.17319054347736268,
+        "deodds_0p5": 0.17622936536517933,
+        "deodds_thr85": 0.17261648912071187,
+        "groups": [
+          "english",
+          "other languages",
+          "spanish"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.7908621960206337,
+        "max_auroc_gap": 0.08957082403835337,
+        "es_auc": 0.7496460175515943,
+        "dpd_0p5": 0.15200756918449476,
+        "deodds_0p5": 0.14594393652490095,
+        "deodds_thr85": 0.15909434137614575,
+        "groups": [
+          "english",
+          "other languages",
+          "spanish"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8007369196757553,
+        "max_auroc_gap": 0.08385098753038356,
+        "es_auc": 0.7874949462845843,
+        "dpd_0p5": 0.15702752505846285,
+        "deodds_0p5": 0.20140332942228828,
+        "deodds_thr85": 0.2119980018819484,
+        "groups": [
+          "english",
+          "other languages",
+          "spanish"
+        ]
+      }
+    },
+    "maritalstatus": {
+      "oct": {
+        "worst_group_auroc": 0.8408307256891157,
+        "max_auroc_gap": 0.060121655263265295,
+        "es_auc": 0.799989451236522,
+        "dpd_0p5": 0.33632953499893836,
+        "deodds_0p5": 0.19960784313725488,
+        "deodds_thr85": 0.17686274509803923,
+        "groups": [
+          "married or partnered",
+          "single",
+          "widowed",
+          "divorced",
+          "unknown"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.8408838751253993,
+        "max_auroc_gap": 0.073265568435809,
+        "es_auc": 0.7907620123536238,
+        "dpd_0p5": 0.2830348927737278,
+        "deodds_0p5": 0.1704357418643133,
+        "deodds_thr85": 0.16381687810259238,
+        "groups": [
+          "married or partnered",
+          "single",
+          "widowed",
+          "divorced",
+          "unknown"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.8479527501511437,
+        "max_auroc_gap": 0.041843168216203264,
+        "es_auc": 0.8110849812260101,
+        "dpd_0p5": 0.3222450279566848,
+        "deodds_0p5": 0.18422504136789852,
+        "deodds_thr85": 0.21180364037506894,
+        "groups": [
+          "married or partnered",
+          "single",
+          "widowed",
+          "divorced",
+          "unknown"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8472817385180609,
+        "max_auroc_gap": 0.058432547196224816,
+        "es_auc": 0.8025636043921763,
+        "dpd_0p5": 0.28402576261589646,
+        "deodds_0p5": 0.14664926022628377,
+        "deodds_thr85": 0.1571980143408715,
+        "groups": [
+          "married or partnered",
+          "single",
+          "widowed",
+          "divorced",
+          "unknown"
+        ]
+      }
+    },
+    "age_group": {
+      "oct": {
+        "worst_group_auroc": 0.8172391266343403,
+        "max_auroc_gap": 0.09113461585679383,
+        "es_auc": 0.7801999901194996,
+        "dpd_0p5": 0.3587338444149589,
+        "deodds_0p5": 0.29605156609335015,
+        "deodds_thr85": 0.2802772649240436,
+        "groups": [
+          "70+",
+          "60-69",
+          "<50",
+          "50-59"
+        ]
+      },
+      "cross": {
+        "worst_group_auroc": 0.8137887250075909,
+        "max_auroc_gap": 0.08664793514536073,
+        "es_auc": 0.7779686737605002,
+        "dpd_0p5": 0.3133262076760529,
+        "deodds_0p5": 0.2133644284650018,
+        "deodds_thr85": 0.20807825608136565,
+        "groups": [
+          "70+",
+          "60-69",
+          "<50",
+          "50-59"
+        ]
+      },
+      "concat": {
+        "worst_group_auroc": 0.8168434805811395,
+        "max_auroc_gap": 0.09409714811298109,
+        "es_auc": 0.781326855203684,
+        "dpd_0p5": 0.40601503759398505,
+        "deodds_0p5": 0.31686586985391774,
+        "deodds_thr85": 0.32206782625595176,
+        "groups": [
+          "70+",
+          "60-69",
+          "<50",
+          "50-59"
+        ]
+      },
+      "late_w015": {
+        "worst_group_auroc": 0.8213520053734256,
+        "max_auroc_gap": 0.09171402439666443,
+        "es_auc": 0.79071309175942,
+        "dpd_0p5": 0.38116123642439437,
+        "deodds_0p5": 0.30653969487902055,
+        "deodds_thr85": 0.2997894600459948,
+        "groups": [
+          "70+",
+          "60-69",
+          "<50",
+          "50-59"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Data (licensed; never commit)
+data/
+*.zip
+*.npz
+# Caches, checkpoints, predictions (derived from licensed data)
+results/**/cache/
+results/**/runs/
+results/**/runs_d/
+results/**/test_preds/
+results/**/checkpoints/
+*.pt
+*.pth
+*.npy
+*.partial.npy
+# Images and logs
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+results/**/logs/
+*.log
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

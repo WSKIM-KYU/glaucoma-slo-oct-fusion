@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "When Does Multimodal Fusion Help? SLO-OCT glaucoma detection code"
+version: 1.0.0
+date-released: 2026-10-29
+license: MIT
+repository-code: "https://github.com/[account]/[repository]"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.[number]"
+authors:
+  - family-names: Cho
+    given-names: Ha Rang
+    affiliation: "Department of AI Software Convergence, Konyang University"
+  - family-names: Lee
+    given-names: Chang Soo
+    affiliation: "Korea Research Institute of Bioscience and Biotechnology"
+  - family-names: Kim
+    given-names: Woong Sik
+    affiliation: "Department of Artificial Intelligence, Konyang University"
+preferred-citation:
+  type: article
+  title: "When Does Multimodal Fusion Help? Cross-Domain Transfer, Joint Fusion, and Late Fusion of SLO and OCT for Glaucoma Detection under an Analysis-Locked Evaluation"
+  journal: "Diagnostics"
+  year: 2026
+  authors:
+    - family-names: Cho
+      given-names: Ha Rang
+    - family-names: Lee
+      given-names: Chang Soo
+    - family-names: Kim
+      given-names: Woong Sik

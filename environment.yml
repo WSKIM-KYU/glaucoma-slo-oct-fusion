@@ -1,0 +1,16 @@
+# Core environment used in the study. The exact export is in environment.exported.yml.
+name: opticfusion
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.17
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.14.1
+      - torchvision==0.29.1
+      - numpy==2.4.6
+      - pandas==3.1.0
+      - scikit-learn==1.9.1
+      - pillow
+      - matplotlib

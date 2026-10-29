@@ -1,0 +1,67 @@
+{
+  "version": "e05_formal_test_v1",
+  "created": "2026-10-28 20:22:56",
+  "data": "Harvard-FairVision Glaucoma official Test 3000 (reused: evaluated once in E04 for GAMMA-trained models; E05 models never used Test)",
+  "reference": "oct (OCT-only, 3-seed probability-mean ensemble)",
+  "primary_endpoint": "AUROC(cross) - AUROC(oct), paired stratified bootstrap 95% CI",
+  "secondary": [
+    "AUROC(concat) - AUROC(oct)",
+    "AUROC(late_w015) - AUROC(oct)",
+    "AUPRC, Brier, ECE(10 bins), sens/spec at 0.5 and at val spec85 threshold"
+  ],
+  "candidates": {
+    "oct": "oct_train_seed{}",
+    "cross": "fusion_cross_imagenet_train_seed{}",
+    "concat": "fusion_concat_imagenet_train_seed{}",
+    "late_w015": "(1-0.15)*logit(oct) + 0.15*logit(slo), weight fixed from validation cross-fit"
+  },
+  "ensemble": "mean of seed probabilities 42,43,44, then logit",
+  "calibration": {
+    "oct": {
+      "platt_a": 1.0942842960357666,
+      "platt_b": -0.08429230004549026,
+      "thr_spec85_val": 0.48089098930358887,
+      "val_auroc": 0.8622213151165165
+    },
+    "cross": {
+      "platt_a": 0.9769461154937744,
+      "platt_b": -0.07315476983785629,
+      "thr_spec85_val": 0.47720980644226074,
+      "val_auroc": 0.8694167977301013
+    },
+    "concat": {
+      "platt_a": 0.8640254139900208,
+      "platt_b": -0.1676606982946396,
+      "thr_spec85_val": 0.4559794068336487,
+      "val_auroc": 0.858079310386227
+    },
+    "late_w015": {
+      "platt_a": 1.1393200159072876,
+      "platt_b": -0.023403722792863846,
+      "thr_spec85_val": 0.46202516555786133,
+      "val_auroc": 0.8649546380448137
+    }
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20261029,
+    "scheme": "stratified by label, paired"
+  },
+  "input": "SLO + 8 B-scans (axis0, uniform of 200), 224 bilinear, ImageNet normalization",
+  "checkpoint_sha256": {
+    "oct_train_seed42": "bc4c369e555970833c3bdadfdf45f649da46bc1b05ee0b4ba6a1d3b7b3ac4391",
+    "oct_train_seed43": "615c09d10e58e99a80d001a9bae0245a790b17b6be2bc7d6ccf366d92dc3b25e",
+    "oct_train_seed44": "7e4434e7b1381cf9c09504e4e2c073ebc64e3f180b1dc64d237cc70903301090",
+    "slo_train_seed42": "a5a29d4ad1e3d22e453e6e84e6935e4622673de719e1e77e78144f216e24ef24",
+    "slo_train_seed43": "c1f118e9393ffec187df857f8ef0069d9190b1eb6bfc68017356f5e8db2cb1ce",
+    "slo_train_seed44": "25151bb0743dc0e63357fc09d93b9ca3a704e002fda5059f07c1116bdbd827df",
+    "fusion_cross_imagenet_train_seed42": "6009e035f06c5878459fc1421ed7f4213794be3ac34c77ca76d4c5a96ce602d0",
+    "fusion_cross_imagenet_train_seed43": "b4fa65b3fd72f31eebd62d6f161d1e6fa856826c92efbb2b550f01f5bf30edfd",
+    "fusion_cross_imagenet_train_seed44": "25a28e41ab5b6e6ac675ad9200f9d50944c394866910c93553a990af1e43580b",
+    "fusion_concat_imagenet_train_seed42": "255682b1b9ae8e26a511223741faf27971d515f0351821b4f3e3f810449b3191",
+    "fusion_concat_imagenet_train_seed43": "0b95425cc407dfc586f9b16ff2dce017b757fac2bfa9f37b0b605651be0ec055",
+    "fusion_concat_imagenet_train_seed44": "eb6ff1c3f0ca77dc73a735853ce49b5b43e00f3008c1b1666ff806bd9debe068"
+  },
+  "script_sha256": "747555265f2766ccdbe4a33a3223832584cd5e945a39ee4693e9f3d25295e486",
+  "rule": "single evaluation; no model, weight, calibration or threshold change after viewing Test"
+}
