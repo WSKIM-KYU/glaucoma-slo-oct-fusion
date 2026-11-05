@@ -4,10 +4,10 @@ title: "When Does Multimodal Fusion Help? SLO-OCT glaucoma detection code"
 version: 1.0.0
 date-released: 2026-10-29
 license: MIT
-repository-code: "https://github.com/[account]/[repository]"
+repository-code: "https://github.com/WSKIM-KYU/glaucoma-slo-oct-fusion"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.[number]"
+    value: "10.5281/zenodo.23757332"
 authors:
   - family-names: Cho
     given-names: Ha Rang

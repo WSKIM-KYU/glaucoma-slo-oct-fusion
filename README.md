@@ -1,5 +1,7 @@
 # When Does Multimodal Fusion Help? SLO–OCT Glaucoma Detection
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23757332.svg)](https://doi.org/10.5281/zenodo.23757332)
+
 Code and aggregate results for the manuscript:
 
 > Cho, H.R.; Lee, C.S.; Kim, W.S. *When Does Multimodal Fusion Help? Cross-Domain Transfer, Joint Fusion, and Late Fusion of SLO and OCT for Glaucoma Detection under an Analysis-Locked Evaluation.* Submitted to *Diagnostics* (MDPI), 2026.
@@ -144,7 +146,7 @@ Code: MIT License (see `LICENSE`). Datasets remain under their original licenses
 
 ## Citation
 
-See `CITATION.cff`. Please cite the paper once published, and the FairVision and GAMMA dataset papers.
+See `CITATION.cff`. Code archive: https://doi.org/10.5281/zenodo.23757332 (release v1.0.0). Please cite the paper once published, and the FairVision and GAMMA dataset papers.
 
 ## Contact
 
