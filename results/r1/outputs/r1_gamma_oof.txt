@@ -1,0 +1,6 @@
+manifest columns: ['patient_id', 'fundus_path', 'oct_path', 'label', 'split'] -> check here which GAMMA partition the 99 cases came from
+=== GAMMA OUT-OF-FOLD, COLLAPSED BINARY SCORE (n=99, glaucoma=50) ===
+octlast_concat   OOF AUROC per seed [0.944, 0.948, 0.944] mean 0.945 | seed-mean score: AUROC 0.950 sens@0.5 0.900 spec@0.5 0.878 mean_p 0.515
+octlast_cross    OOF AUROC per seed [0.927, 0.934, 0.932] mean 0.931 | seed-mean score: AUROC 0.943 sens@0.5 0.860 spec@0.5 0.816 mean_p 0.540
+oct_attn_frozen  OOF AUROC per seed [0.879, 0.864, 0.889] mean 0.877 | seed-mean score: AUROC 0.900 sens@0.5 0.880 spec@0.5 0.776 mean_p 0.551
+note: n = 99, so these AUROCs are imprecise; report them with that caveat.

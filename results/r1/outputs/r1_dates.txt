@@ -1,0 +1,6 @@
+protocol.json 'created': 2026-10-28 20:22:56
+protocol.json                mtime 2026-10-28 20:22:56
+results.json                 mtime 2026-10-29 09:44:56
+supplementary_stats.json     mtime 2026-10-29 10:43:51
+test_preds: first 2026-10-28 20:28:22 | last 2026-10-28 20:29:04
+-> report the results.json mtime as the date of the single test evaluation (check that the file was not copied or touched afterwards).

@@ -1,0 +1,8 @@
+=== NORMAL-LABELLED TEST EYES: MD ===
+n normal = 1534, MD available = 1534
+minimum MD = -1.00 dB | n with MD < -1 dB = 0 | n with MD < -2 dB = 0
+glaucoma eyes: maximum MD = -3.01 dB | n with MD > -3 dB = 0
+false positives at locked thr85 by race (should be white 162/1238, black 51/163, asian 4/133):
+  white  162/1238
+  black  51/163
+  asian  4/133

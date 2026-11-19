@@ -1,0 +1,10 @@
+=== R1: MODALITY-BALANCED CONCATENATION FUSION (validation, 3-seed ensembles) ===
+  seed 42: best epoch 3 val_auroc=0.8495 | rho median=1.230 OCT-dominant steps=1.00 coef_oct=0.883 coef_slo=1.000
+  seed 43: best epoch 4 val_auroc=0.8527 | rho median=1.237 OCT-dominant steps=0.99 coef_oct=0.880 coef_slo=1.000
+  seed 44: best epoch 4 val_auroc=0.8533 | rho median=1.268 OCT-dominant steps=0.99 coef_oct=0.867 coef_slo=1.000
+OCT-only                         ensemble AUROC = 0.8622
+concat (standard)                ensemble AUROC = 0.8581
+concat + OGM (alpha=0.5)         ensemble AUROC = 0.8625
+delta AUROC, concat + OGM (alpha=0.5) minus OCT-only: +0.0003 95% CI [-0.0115, +0.0125]
+delta AUROC, concat + OGM (alpha=0.5) minus concat (standard): +0.0045 95% CI [-0.0036, +0.0128]
+R1 OGM COMPARE DONE

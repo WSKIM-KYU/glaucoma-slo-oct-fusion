@@ -1,0 +1,15 @@
+fusion_concat_imagenet_train_seed42: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+fusion_concat_imagenet_train_seed43: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+fusion_concat_imagenet_train_seed44: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+fusion_cross_imagenet_train_seed42: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+fusion_cross_imagenet_train_seed43: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+fusion_cross_imagenet_train_seed44: max |intact - saved val_pred_best| = 0.00e+00 (should be ~0)
+=== TABLE S7: SLO ABLATION (validation, 3-seed ensembles) ===
+OCT-only AUROC = 0.8622
+concat: intact AUROC = 0.8581
+  SLO zeros    AUROC = 0.8480 | vs intact -0.0101 [-0.0190, -0.0010] | vs OCT-only -0.0142 [-0.0255, -0.0035]
+  SLO shuffled AUROC = 0.8347 | vs intact -0.0234 [-0.0355, -0.0107] | vs OCT-only -0.0275 [-0.0421, -0.0130]
+cross: intact AUROC = 0.8694
+  SLO zeros    AUROC = 0.8685 | vs intact -0.0009 [-0.0122, +0.0099] | vs OCT-only +0.0062 [-0.0029, +0.0155]
+  SLO shuffled AUROC = 0.8452 | vs intact -0.0242 [-0.0400, -0.0086] | vs OCT-only -0.0171 [-0.0321, -0.0020]
+interpretation: a small drop when SLO is removed = the fusion model relied little on SLO.

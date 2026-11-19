@@ -1,0 +1,12 @@
+[11:11:24] START fusion_concat_imagenet_train_ogm_a0.5_seed43: train=6000 val=1000 steps/epoch=188 alpha=0.5
+[11:12:22] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep01 loss=0.5785 val_auroc=0.7691 mean_p=0.482 | rho(OCT/SLO) median=1.145 OCT-dominant steps=0.77 coef_oct=0.927 coef_slo=0.999 (58s)
+[11:13:19] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep02 loss=0.4784 val_auroc=0.8507 mean_p=0.504 | rho(OCT/SLO) median=1.251 OCT-dominant steps=1.00 coef_oct=0.875 coef_slo=1.000 (57s)
+[11:14:16] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep03 loss=0.4340 val_auroc=0.8323 mean_p=0.385 | rho(OCT/SLO) median=1.257 OCT-dominant steps=1.00 coef_oct=0.873 coef_slo=1.000 (57s)
+[11:15:13] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep04 loss=0.4043 val_auroc=0.8527 mean_p=0.540 | rho(OCT/SLO) median=1.237 OCT-dominant steps=0.99 coef_oct=0.880 coef_slo=1.000 (57s)
+[11:16:10] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep05 loss=0.3542 val_auroc=0.8513 mean_p=0.591 | rho(OCT/SLO) median=1.191 OCT-dominant steps=0.94 coef_oct=0.903 coef_slo=0.999 (57s)
+[11:17:07] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep06 loss=0.3055 val_auroc=0.8356 mean_p=0.499 | rho(OCT/SLO) median=1.147 OCT-dominant steps=0.93 coef_oct=0.921 coef_slo=0.999 (57s)
+[11:18:04] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep07 loss=0.2367 val_auroc=0.8244 mean_p=0.385 | rho(OCT/SLO) median=1.138 OCT-dominant steps=0.91 coef_oct=0.929 coef_slo=0.997 (57s)
+[11:18:53] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep08 loss=0.1784 val_auroc=0.8243 mean_p=0.405 | rho(OCT/SLO) median=1.090 OCT-dominant steps=0.83 coef_oct=0.946 coef_slo=0.995 (49s)
+[11:19:50] fusion_concat_imagenet_train_ogm_a0.5_seed43 ep09 loss=0.1299 val_auroc=0.8328 mean_p=0.402 | rho(OCT/SLO) median=1.073 OCT-dominant steps=0.72 coef_oct=0.953 coef_slo=0.993 (57s)
+[11:19:50] early stop at ep9
+[11:19:50] DONE fusion_concat_imagenet_train_ogm_a0.5_seed43: best ep4 val_auroc=0.8527

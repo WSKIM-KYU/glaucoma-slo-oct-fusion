@@ -1,0 +1,15 @@
+=== TABLE S6: held-out-half AUROC difference vs OCT-only (20 repeats x 2 halves = 40 halves) ===
+scale            w     mean      min      max  halves>0
+probability   0.00  +0.0000  +0.0000  +0.0000      0/40
+probability   0.15  +0.0016  -0.0024  +0.0062     31/40
+probability   0.50  -0.0135  -0.0278  +0.0010      1/40
+logit         0.00  +0.0000  +0.0000  +0.0000      0/40
+logit         0.15  +0.0028  -0.0018  +0.0074     38/40
+logit         0.50  -0.0115  -0.0254  +0.0024      2/40
+full validation split (no cross-fitting):
+  probability  w=0.00 delta=+0.0000
+  probability  w=0.15 delta=+0.0016
+  probability  w=0.50 delta=-0.0136
+  logit        w=0.00 delta=+0.0000
+  logit        w=0.15 delta=+0.0027
+  logit        w=0.50 delta=-0.0116
