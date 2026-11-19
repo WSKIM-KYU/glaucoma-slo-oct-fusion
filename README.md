@@ -146,8 +146,18 @@ Code: MIT License (see `LICENSE`). Datasets remain under their original licenses
 
 ## Citation
 
-See `CITATION.cff`. Code archive: https://doi.org/10.5281/zenodo.23757332 (release v1.0.0). Please cite the paper once published, and the FairVision and GAMMA dataset papers.
+See `CITATION.cff`. Code archive: https://doi.org/10.5281/zenodo.23757332 (release v1.0.0; later releases, including v1.1.0 with the Revision 1 analyses, are linked from the same Zenodo record). Please cite the paper once published, and the FairVision and GAMMA dataset papers.
 
 ## Contact
 
 Woong Sik Kim (wskim@konyang.ac.kr) and Chang Soo Lee (cslee@kribb.re.kr).
+
+## Revision 1 analyses (v1.1.0)
+
+Post hoc analyses added during peer review. New models were trained and evaluated on the Training and Validation splits only; no additional model was evaluated on the Test split, and these analyses were not part of the locked test protocol.
+
+- `analysis/r1_revision_checks.py`: evaluation dates, minimum MD of normal-labelled eyes, probability versus logit fusion, GAMMA out-of-fold performance, SLO ablation.
+- `analysis/r1_ogm_concat.py`: concatenation fusion with on-the-fly gradient modulation.
+- `results/r1/`: printed outputs and run metrics.
+
+Both scripts take the current working directory as the repository root (`ROOT = Path.cwd()`), so run them from the repository root, e.g. `python -u analysis/r1_revision_checks.py --stage s6`. `r1_ogm_concat.py` writes to `~/r1/runs_ogm`.
